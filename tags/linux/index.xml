@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>linux on FENG的小站</title>
+    <link>https://leafco.github.io/tags/linux/</link>
+    <description>Recent content in linux on FENG的小站</description>
+    <image>
+      <url>https://leafco.github.io/97</url>
+      <link>https://leafco.github.io/97</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Fri, 13 May 2022 16:42:48 +0800</lastBuildDate><atom:link href="https://leafco.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jar(war)包文件更新</title>
+      <link>https://leafco.github.io/posts/jarwar%E5%8C%85%E6%96%87%E4%BB%B6%E6%9B%B4%E6%96%B0/</link>
+      <pubDate>Fri, 13 May 2022 16:42:48 +0800</pubDate>
+      
+      <guid>https://leafco.github.io/posts/jarwar%E5%8C%85%E6%96%87%E4%BB%B6%E6%9B%B4%E6%96%B0/</guid>
+      <description>更新jar/war包中的文件 手动部署jar/war包时，当更新少数文件时可以使用jdk提供的jar命令进行更新
+1.查找需要更新的文件在jar/war包中的路径 命令格式：jar -tvf jar或war包名称 | grep 替换的文件名称
+例如：
+jar -tvf xxx.jar | grep xxx.class 2.解压需要替换的jar/war包中文件及路径 命令格式：jar -xvf jar/war包名称 替换文件的路径（第1步中查询到的结果）
+例如：
+jar -xvf xxx.jar WEB-INF/classes/com/xxx/xx/App.class 3.替换掉或者修改解压出来的文件（命令略） 4.将替换后的文件更新到jar/war包中 命令格式：jar -uvf jar/war包名称 替换文件路径（第1步中查询到的结果）
+例如：
+jar -uvf xxx.jar WEB-INF/classes/com/xxx/xx/App.class </description>
+      <content:encoded><![CDATA[<h2 id="更新jarwar包中的文件">更新jar/war包中的文件</h2>
+<p>手动部署<code>jar/war</code>包时，当更新少数文件时可以使用<code>jdk</code>提供的<code>jar</code>命令进行更新</p>
+<h3 id="1查找需要更新的文件在jarwar包中的路径">1.查找需要更新的文件在<code>jar/war</code>包中的路径</h3>
+<p>命令格式：<code>jar -tvf jar</code>或<code>war</code>包名称 | <code>grep</code> 替换的文件名称</p>
+<p>例如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>jar -tvf xxx.jar | grep xxx.class
+</span></span></code></pre></div><h3 id="2解压需要替换的jarwar包中文件及路径">2.解压需要替换的<code>jar/war</code>包中文件及路径</h3>
+<p>命令格式：<code>jar -xvf jar/war</code>包名称 替换文件的路径（第1步中查询到的结果）</p>
+<p>例如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>jar -xvf xxx.jar WEB-INF/classes/com/xxx/xx/App.class
+</span></span></code></pre></div><h3 id="3替换掉或者修改解压出来的文件命令略">3.替换掉或者修改解压出来的文件（命令略）</h3>
+<h3 id="4将替换后的文件更新到jarwar包中">4.将替换后的文件更新到<code>jar/war</code>包中</h3>
+<p>命令格式：<code>jar -uvf jar/war</code>包名称 替换文件路径（第1步中查询到的结果）</p>
+<p>例如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>jar -uvf xxx.jar WEB-INF/classes/com/xxx/xx/App.class
+</span></span></code></pre></div>]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

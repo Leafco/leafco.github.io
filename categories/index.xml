@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>分类 on FENG的小站</title>
+    <link>https://leafco.github.io/categories/</link>
+    <description>Recent content in 分类 on FENG的小站</description>
+    <image>
+      <url>https://leafco.github.io/97</url>
+      <link>https://leafco.github.io/97</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Fri, 13 May 2022 16:42:48 +0800</lastBuildDate><atom:link href="https://leafco.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux</title>
+      <link>https://leafco.github.io/categories/linux/</link>
+      <pubDate>Fri, 13 May 2022 16:42:48 +0800</pubDate>
+      
+      <guid>https://leafco.github.io/categories/linux/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
